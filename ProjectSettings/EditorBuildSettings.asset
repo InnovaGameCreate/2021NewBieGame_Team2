@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test/SatouNanoha/Scene/right.unity
     guid: 64ba0190bd79eeb4b97610407e85f846
+  - enabled: 1
+    path: Assets/Test/SatouNanoha/Scene/hayabenn.unity
+    guid: 3a01f868c01377a4a8021b8a6cd0c9ba
   m_configObjects: {}

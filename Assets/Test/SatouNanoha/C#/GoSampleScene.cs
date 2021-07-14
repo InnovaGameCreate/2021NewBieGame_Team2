@@ -16,7 +16,7 @@ public class GoSampleScene : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Main");
         }
     }
 }

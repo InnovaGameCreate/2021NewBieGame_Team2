@@ -26,5 +26,9 @@ public class SceneChange : MonoBehaviour
         {
             SceneManager.LoadScene("inemuri");
         }
+        if (Input.GetKey(KeyCode.A))
+        {
+            SceneManager.LoadScene("hayabenn");
+        }
     }
 }

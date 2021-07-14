@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RightToLeft : MonoBehaviour
+
+public class HayabennToMain : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,7 @@ public class RightToLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene("Main");
         }

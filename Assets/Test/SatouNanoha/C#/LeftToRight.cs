@@ -16,7 +16,7 @@ public class LeftToRight : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Main");
         }
     }
 }
