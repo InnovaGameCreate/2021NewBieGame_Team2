@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 367876485}
   - component: {fileID: 367876486}
   m_Layer: 0
-  m_Name: GoSampleScene
+  m_Name: GoMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,6 +246,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 367876484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ab507461549dd41b90b2e389039d88, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f9c9260bd1525a4486d5292737795e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
