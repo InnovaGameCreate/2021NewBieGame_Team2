@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test/SatouNanoha/Scene/hayabenn.unity
     guid: 3a01f868c01377a4a8021b8a6cd0c9ba
+  - enabled: 1
+    path: Assets/Test/KobayashiHirokazu/Scene/Main.unity
+    guid: 15ac23b7e3c70a34a8dac140ee3ff70c
+  - enabled: 1
+    path: Assets/Test/KobayashiHirokazu/Scene/Hit.unity
+    guid: 69f71fa4edaea24439abbbb1208bf66f
+  - enabled: 1
+    path: Assets/Test/KobayashiHirokazu/Scene/Shooting.unity
+    guid: 0f903065ea9e4424f91bf43221554295
   m_configObjects: {}
