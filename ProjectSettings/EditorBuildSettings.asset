@@ -5,28 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/SatouNanoha/Scene/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/SatouNanoha/Scene/inemuri.unity
     guid: 0ff98b57c1db97b4cb87a22a73de1a3c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/SatouNanoha/Scene/left.unity
     guid: 99a91df368d4ac84ba4c6946c5dda8c2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/SatouNanoha/Scene/right.unity
     guid: 64ba0190bd79eeb4b97610407e85f846
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/SatouNanoha/Scene/hayabenn.unity
     guid: 3a01f868c01377a4a8021b8a6cd0c9ba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/KobayashiHirokazu/Scene/Main.unity
     guid: 15ac23b7e3c70a34a8dac140ee3ff70c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/KobayashiHirokazu/Scene/Hit.unity
     guid: 69f71fa4edaea24439abbbb1208bf66f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Test/KobayashiHirokazu/Scene/Shooting.unity
     guid: 0f903065ea9e4424f91bf43221554295
+  - enabled: 1
+    path: Assets/Test/kozai/Scene/Main.unity
+    guid: 90ba2e5f4b0f06743b11cf9bf0b3386d
+  - enabled: 1
+    path: Assets/Test/kozai/Scene/hayaben.unity
+    guid: 93d201907994f754996a20e624492ccb
   m_configObjects: {}
