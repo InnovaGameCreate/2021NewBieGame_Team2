@@ -30,6 +30,12 @@ EditorBuildSettings:
     path: Assets/Test/KobayashiHirokazu/Scene/Shooting.unity
     guid: 0f903065ea9e4424f91bf43221554295
   - enabled: 1
+    path: Assets/Test/kozai/Scene/Starting.unity
+    guid: b648a3c67b0ca6a4a8b1b3190d158ca5
+  - enabled: 1
+    path: Assets/Test/kozai/Scene/Setumei.unity
+    guid: bc0c8c26f15240f49a29452fa7429ae4
+  - enabled: 1
     path: Assets/Test/kozai/Scene/Main.unity
     guid: 90ba2e5f4b0f06743b11cf9bf0b3386d
   - enabled: 1
