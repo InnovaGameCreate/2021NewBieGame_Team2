@@ -2,13 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class renda : MonoBehaviour
 {
-    int count = 0;
+    float count = 0;
+    public int point;
+    public float score;
+    public GameObject mainmain;
+    private mainmain mainmainCs;
     // Start is called before the first frame update
     void Start()
     {      
-       
+        mainmain = GameObject.Find("mainmain");
+        mainmainCs = mainmain.GetComponent<mainmain>();
     }
 
     // Update is called once per frame
@@ -20,7 +26,9 @@ public class renda : MonoBehaviour
         }
         if (count >= 20)
         {
-         SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Main");
+        count -= 20;
+        mainmainCs.score = mainmainCs.score + point; 
         }
         if (Input.GetKey(KeyCode.Escape))
         {
