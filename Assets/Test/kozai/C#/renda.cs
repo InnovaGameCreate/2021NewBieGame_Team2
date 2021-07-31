@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
 public class renda : MonoBehaviour
 {
     float count = 0;
@@ -13,11 +12,13 @@ public class renda : MonoBehaviour
     private mainmain mainmainCs;
     public Image Image1;
     public Sprite Sprite1;
+    
     // Start is called before the first frame update
     void Start()
     {      
         mainmain = GameObject.Find("mainmain");
         mainmainCs = mainmain.GetComponent<mainmain>();
+        
     }
 
     // Update is called once per frame
