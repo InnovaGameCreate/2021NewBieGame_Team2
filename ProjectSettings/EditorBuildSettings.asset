@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test/kozai/Scene/hayaben.unity
     guid: 93d201907994f754996a20e624492ccb
+  - enabled: 1
+    path: Assets/Test/kozai/Scene/Result.unity
+    guid: 7b80af368cf09a84f9bbf1c00a961aaf
   m_configObjects: {}
