@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class renda : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class renda : MonoBehaviour
     public float score;
     public GameObject mainmain;
     private mainmain mainmainCs;
+    public Image Image1;
+    public Sprite Sprite1;
     // Start is called before the first frame update
     void Start()
     {      
@@ -26,6 +29,7 @@ public class renda : MonoBehaviour
         }
         if (count >= 20)
         {
+        Image1.sprite = Sprite1;
         SceneManager.LoadScene("Main");
         count -= 20;
         mainmainCs.score = mainmainCs.score + point; 
