@@ -30,13 +30,17 @@ public class renda : MonoBehaviour
         if (count >= 20)
         {
         Image1.sprite = Sprite1;
-        SceneManager.LoadScene("Main");
-        count -= 20;
-        mainmainCs.score = mainmainCs.score + point; 
+        Invoke("DelayMethod", 3.5f);
         }
         if (Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene("Main");
         }
+    }
+    void DelayMethod()
+    {
+        SceneManager.LoadScene("Main");
+        count -= 20;
+        mainmainCs.score = mainmainCs.score + point; 
     }
 }
