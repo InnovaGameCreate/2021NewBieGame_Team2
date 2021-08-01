@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class scenechange : MonoBehaviour
 {
+    public GameObject main;
+    private Main mainCs;
     // Start is called before the first frame update
     void Start()
-    {
-        
-    }
+        {
+            main = GameObject.Find("Main");
+            mainCs = main.GetComponent<Main>();
+        }
 
     // Update is called once per frame
     void Update()
@@ -30,6 +33,11 @@ public class scenechange : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
             {
                 SceneManager.LoadScene("Hayabenn");
+            }
+            if (mainCs.eraser >= 1)        //eraser‚ª1ˆÈã‚È‚ç
+            {
+                if (Input.GetKey(KeyCode.G)) //GƒL[‚ª‰Ÿ‚³‚ê‚½‚È‚ç
+                    SceneManager.LoadScene("Shooting");
             }
         }
     }
