@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test/SatouNanoha/scene/Hayabenn.unity
     guid: 364bd8a9fe9f55a48b34d887317c56fd
+  - enabled: 1
+    path: Assets/Test/SatouNanoha/scene/Result1.unity
+    guid: 8761bc351ebfae34dbe1271ff1cb2820
+  - enabled: 1
+    path: Assets/Test/SatouNanoha/scene/Shooting.unity
+    guid: 4cab2a41816b7164c9adefdc552295d8
+  - enabled: 1
+    path: Assets/Test/SatouNanoha/scene/Hurimuita.unity
+    guid: 22bee69872f58c04a9dba94cb009efed
   m_configObjects: {}
