@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test/SatouNanoha/scene/Hurimuita.unity
     guid: 22bee69872f58c04a9dba94cb009efed
+  - enabled: 1
+    path: Assets/Test/SatouNanoha/scene/Result2.unity
+    guid: 2b45714c146c33249b96773462400fdf
   m_configObjects: {}
