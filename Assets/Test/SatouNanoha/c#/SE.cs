@@ -31,6 +31,5 @@ public class SE : MonoBehaviour
         {
             hanashikakeru.Stop();
         }
-
     }
 }
