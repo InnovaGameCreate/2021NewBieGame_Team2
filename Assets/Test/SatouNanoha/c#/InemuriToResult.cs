@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InemuriToResult : MonoBehaviour
 {
-    public float InemuriTime; //Right‚É—ˆ‚Ä‚©‚ç‚ÌŠÔ
+    public float InemuriTime; //Inemuri‚É—ˆ‚Ä‚©‚ç‚ÌŠÔ
     public float backTime;  //U‚èŒü‚­ŠÔ
     // Start is called before the first frame update
     void Start()
