@@ -12,13 +12,11 @@ public class renda : MonoBehaviour
     private mainmain mainmainCs;
     public Image Image1;
     public Sprite Sprite1;
-    
     // Start is called before the first frame update
     void Start()
     {      
         mainmain = GameObject.Find("mainmain");
         mainmainCs = mainmain.GetComponent<mainmain>();
-        
     }
 
     // Update is called once per frame
@@ -40,8 +38,7 @@ public class renda : MonoBehaviour
     }
     void DelayMethod()
     {
-        SceneManager.LoadScene("Main");
-        count -= 20;
         mainmainCs.score = mainmainCs.score + point; 
+        SceneManager.LoadScene("Main");
     }
 }

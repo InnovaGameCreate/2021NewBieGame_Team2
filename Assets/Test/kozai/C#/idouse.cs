@@ -1,23 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class Letsgo : MonoBehaviour
+public class idouse : MonoBehaviour
 {
-
+    public AudioClip sound1;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown (KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            
-            SceneManager.LoadScene("Main");
-        }        
+            audioSource.PlayOneShot(sound1);
+        }
     }
 }
