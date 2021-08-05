@@ -19,6 +19,6 @@ public class Timecount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeText.text = "タイム:" + mainCs.time.ToString();
+        timeText.text = "タイム:" + mainCs.time.ToString("f1");
     }
 }
