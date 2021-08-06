@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class gomain : MonoBehaviour
+public class Hurimuita : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,9 +14,11 @@ public class gomain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            SceneManager.LoadScene("main");
-        }
+        Invoke("DelayMethod", 2);  //2•bŒã‚ÉDelayMethod‚Ö
+    }
+
+    void DelayMethod()
+    {
+        SceneManager.LoadScene("Result2");
     }
 }

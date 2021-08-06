@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LeftToRight : MonoBehaviour
+public class lefttoright : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,8 @@ public class LeftToRight : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("main");
         }
+
     }
 }
