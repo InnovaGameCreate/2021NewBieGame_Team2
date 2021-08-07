@@ -16,7 +16,7 @@ public class gomain : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            SceneManager.LoadScene("main");
+            SceneManager.LoadScene("Main");
         }
     }
 }

@@ -16,7 +16,7 @@ public class hayabenntomain : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            SceneManager.LoadScene("main");
+            SceneManager.LoadScene("Main");
         }
     }
 }
