@@ -17,7 +17,7 @@ public class RightToResult : MonoBehaviour
     void Update()
     {
         RightTime = RightTime + Time.deltaTime;
-        backTime = Random.Range(5.0f, 15.0f);
+        backTime = Random.Range(8.0f, 15.0f);
         if (RightTime > backTime)
         {
             SceneManager.LoadScene("Hurimuita");
