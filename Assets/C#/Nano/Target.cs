@@ -11,11 +11,17 @@ public class Target : MonoBehaviour
     private float reload;
     private GameObject main;
     private Main mainCs;
+
+    public AudioClip sound1; //タイムアップ音源
+    AudioSource audiosource;
+
     // Start is called before the first frame update
     void Start()
     {
         main = GameObject.Find("Main");
         mainCs = main.GetComponent<Main>();
+
+        audiosource = GetComponent<AudioSource>(); //Componentの取得
     }
 
     // Update is called once per frame
@@ -34,7 +40,7 @@ public class Target : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape))   //Escapeを押されたら"Main"に戻る
             SceneManager.LoadScene("Main");
         if (mainCs.eraser <= 0)      //eraserが0になったら"Main"に戻る
-            SceneManager.LoadScene("Main");
+            Invoke("ToMainMethod", 1);
         if (reloadTime > reload)
             reload = reload + Time.deltaTime;
         else
@@ -44,9 +50,14 @@ public class Target : MonoBehaviour
             {
                 mainCs.eraser = mainCs.eraser - 1; //消しゴム消費
                 reload = 0;
+
+                audiosource.PlayOneShot(sound1);  //消しゴム投げSE
+                
             }
+
         }
     }
+   
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "wig")
@@ -60,11 +71,21 @@ public class Target : MonoBehaviour
                     if (mainCs.eraser >= 1)
                     {
                         mainCs.score = mainCs.score + 1000; Debug.Log("当たった");  //スコア加算
-                        SceneManager.LoadScene("Hit");
                         reload = 0;
+                        Invoke("ToHitMethod", 2);
                     }
                 }
             }
         }
+    }
+    
+    void ToMainMethod()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    void ToHitMethod()
+    {
+        SceneManager.LoadScene("Hit");
     }
 }
