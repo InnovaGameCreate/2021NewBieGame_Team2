@@ -16,7 +16,6 @@ public class Letsgo : MonoBehaviour
     {
         if (Input.GetKeyDown (KeyCode.Return))
         {
-            
             SceneManager.LoadScene("Main");
         }        
     }

@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class Result1 : MonoBehaviour
 {   
     private int score;
-    public GameObject mainmain;
-    private mainmain mainmainCs;
+    public GameObject main;
+    private Main mainCs;
     public Text Text;    
     // Start is called before the first frame update
     void Start()
     {
-        mainmain = GameObject.Find("mainmain");
-        mainmainCs = mainmain.GetComponent<mainmain>();
+        main = GameObject.Find("Main");
+        mainCs = main.GetComponent<Main>();
         Text.text = score.ToString();
     }
 
