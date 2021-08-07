@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class renda : MonoBehaviour
 {
     float count = 0;
     public int point;
     public float score;
+    private GameObject main;
+    private Main mainCs;
     public Image Image1;
     public Sprite Sprite1;
-    public GameObject main;
-    private Main mainCs;
     // Start is called before the first frame update
     void Start()
     {
