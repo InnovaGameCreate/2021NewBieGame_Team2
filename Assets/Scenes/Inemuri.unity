@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 0}
-  timeText: {fileID: 0}
+  timeText: {fileID: 947499625}
 --- !u!4 &1366304645
 Transform:
   m_ObjectHideFlags: 0
