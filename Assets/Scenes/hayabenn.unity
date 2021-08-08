@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e16dc7d7c95aa146a8791fe5c644fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 20
+  point: 300
   score: 0
   Image1: {fileID: 1027377705}
   Sprite1: {fileID: 21300000, guid: 777c85f8b55aeae4787e9eb336b0fbb1, type: 3}
