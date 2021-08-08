@@ -7,6 +7,7 @@ public class SE : MonoBehaviour
     public GameObject main;
     private Main mainCs;
     private AudioSource hanashikakeru;
+    bool seCalledOnce = false; //se‚ðˆê‰ñ‚¾‚¯ŒÄ‚Ô
     AudioSource audiosource;
 
     // Start is called before the first frame update
@@ -22,9 +23,10 @@ public class SE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T) && seCalledOnce == false)
         {
             hanashikakeru.PlayOneShot(hanashikakeru.clip);
+            seCalledOnce = true;
         }
 
         if (mainCs.eraser >= 2)
