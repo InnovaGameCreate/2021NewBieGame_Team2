@@ -270,8 +270,8 @@ Canvas:
   m_GameObject: {fileID: 463423391}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 1067420454}
   - component: {fileID: 1067420453}
   m_Layer: 5
-  m_Name: heikei
+  m_Name: haikei
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -684,7 +684,7 @@ Canvas:
   m_GameObject: {fileID: 1067420452}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1174,11 +1174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4101981928828304500, guid: e975334524879a744b8802695c4573b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4101981928828304500, guid: e975334524879a744b8802695c4573b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4101981928828304500, guid: e975334524879a744b8802695c4573b1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1215,6 +1215,10 @@ PrefabInstance:
     - target: {fileID: 4101981928828304504, guid: e975334524879a744b8802695c4573b1, type: 3}
       propertyPath: m_Name
       value: Wig
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101981928828304507, guid: e975334524879a744b8802695c4573b1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e975334524879a744b8802695c4573b1, type: 3}
