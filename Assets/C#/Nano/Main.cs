@@ -8,7 +8,7 @@ public class Main : MonoBehaviour
 {
     public float eraser;
     public float score;
-    public float time = 180.0f;
+    public float time;
     public Text number;
     public Text nageru;
     bool timeLimit = true; //ƒvƒŒƒCŠÔ‚Ì§ŒÀ
@@ -36,6 +36,7 @@ public class Main : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>(); //Component‚Ìæ“¾
+        time = 180.0f;
     }
 
     // Update is called once per frame
