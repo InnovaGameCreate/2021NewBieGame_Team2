@@ -44,7 +44,7 @@ public class Main : MonoBehaviour
         time = time - Time.deltaTime;
         if (SceneManager.GetActiveScene().name != "Hurimuita" || SceneManager.GetActiveScene().name != "Result2")//‚à‚µ‚¢‚éƒV[ƒ“‚ª"Hurimuita"‚Å‚à"Result2"‚Å‚à‚È‚¢‚È‚ç
         {
-            if (time >= 180)
+            if (time <= 0 )
             {
                 audiosource.PlayOneShot(sound1);  //ŽžŠÔØ‚ê‚ÌSE
                 Invoke("DelayMethod", 2);  //2•bŒã‚ÉDelayMethod‚Ö
