@@ -72,7 +72,7 @@ public class Target : MonoBehaviour
                     {
                         mainCs.score = mainCs.score + 1000; Debug.Log("ìñÇΩÇ¡ÇΩ");  //ÉXÉRÉAâ¡éZ
                         reload = 0;
-                        Invoke("ToHitMethod", 2);
+                        SceneManager.LoadScene("Hit");
                     }
                 }
             }
@@ -82,10 +82,5 @@ public class Target : MonoBehaviour
     void ToMainMethod()
     {
         SceneManager.LoadScene("Main");
-    }
-
-    void ToHitMethod()
-    {
-        SceneManager.LoadScene("Hit");
     }
 }
