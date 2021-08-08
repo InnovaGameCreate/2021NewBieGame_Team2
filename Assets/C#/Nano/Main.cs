@@ -8,7 +8,7 @@ public class Main : MonoBehaviour
 {
     public float eraser;
     public float score;
-    public float time;
+    public float time = 180.0f;
     public Text number;
     public Text nageru;
     bool timeLimit = true; //プレイ時間の制限
@@ -41,7 +41,7 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time = time + Time.deltaTime;
+        time = time - Time.deltaTime;
         if (SceneManager.GetActiveScene().name != "Hurimuita" || SceneManager.GetActiveScene().name != "Result2")//もしいるシーンが"Hurimuita"でも"Result2"でもないなら
         {
             if (time >= 180)
