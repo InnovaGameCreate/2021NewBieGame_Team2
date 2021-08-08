@@ -30,7 +30,7 @@ public class renda : MonoBehaviour
         if (count >= 20)
         {
         Image1.sprite = Sprite1;
-        Invoke("DelayMethod", 3.5f);
+        Invoke("DelayMethod", 1f);
         }
         if (Input.GetKey(KeyCode.Escape))
         {

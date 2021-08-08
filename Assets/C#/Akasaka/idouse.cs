@@ -9,14 +9,12 @@ public class idouse : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(sound1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            audioSource.PlayOneShot(sound1);
-        }
+            
     }
 }
