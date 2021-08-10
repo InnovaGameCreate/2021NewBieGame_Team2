@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class renda : MonoBehaviour
 {
+    bool haoto = true;
     float count = 0;
     public int point;
     public float score;
@@ -13,11 +14,14 @@ public class renda : MonoBehaviour
     private Main mainCs;
     public Image Image1;
     public Sprite Sprite1;
+    public AudioClip sound1;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         main = GameObject.Find("Main");
         mainCs = main.GetComponent<Main>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,12 +33,14 @@ public class renda : MonoBehaviour
         }
         if (count >= 20)
         {
-        Image1.sprite = Sprite1;
-        Invoke("DelayMethod", 1f);
-        }
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("Main");
+            Image1.sprite = Sprite1;
+            Invoke("DelayMethod", 1f);
+
+            if (haoto == true)
+            {
+                audioSource.PlayOneShot(sound1);
+                haoto = false;
+            }
         }
     }
     void DelayMethod()

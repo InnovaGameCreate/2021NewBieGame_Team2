@@ -37,8 +37,6 @@ public class Target : MonoBehaviour
             if (this.transform.position.x >= xRange * -1)
                 transform.Translate(new Vector2(-10, 0) * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.Escape))   //Escape‚ð‰Ÿ‚³‚ê‚½‚ç"Main"‚É–ß‚é
-            SceneManager.LoadScene("Main");
 
         if (mainCs.eraser <= 0)      //eraser‚ª0‚É‚È‚Á‚½‚ç"Main"‚É–ß‚é
             Invoke("ToMainMethod", 1);
