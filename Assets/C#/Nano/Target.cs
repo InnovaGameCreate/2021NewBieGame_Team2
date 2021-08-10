@@ -39,8 +39,10 @@ public class Target : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Escape))   //Escape‚ð‰Ÿ‚³‚ê‚½‚ç"Main"‚É–ß‚é
             SceneManager.LoadScene("Main");
+
         if (mainCs.eraser <= 0)      //eraser‚ª0‚É‚È‚Á‚½‚ç"Main"‚É–ß‚é
             Invoke("ToMainMethod", 1);
+
         if (reloadTime > reload)
             reload = reload + Time.deltaTime;
         else

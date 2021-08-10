@@ -5,19 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class lefttoright : MonoBehaviour
 {
+    public AudioClip sound1;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            SceneManager.LoadScene("Main");
+            audioSource.PlayOneShot(sound1);
+            Invoke("ToMainMethod", 1.0f);
         }
 
+    }
+    void ToMainMethod()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
