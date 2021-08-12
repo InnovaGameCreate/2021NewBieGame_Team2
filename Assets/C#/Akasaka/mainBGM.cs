@@ -10,11 +10,15 @@ public class mainBGM : MonoBehaviour
     public AudioClip sound2;
     AudioSource BGM;
     AudioSource oneminBGM;
+
+    bool bgmCalledOnce = false;
+
     // Start is called before the first frame update
     void Start()
     {
         main = GameObject.Find("Main");
         mainCs = main.GetComponent<Main>();
+
         BGM = GetComponent<AudioSource>();
         oneminBGM = GetComponent<AudioSource>();
     }
@@ -22,13 +26,14 @@ public class mainBGM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mainCs.time > 60)
+        if (mainCs.time <= 60)
         {
-            BGM.PlayOneShot(sound1);
-        }
-        else
-        {
-            BGM.PlayOneShot(sound2);
+            if (bgmCalledOnce == false)
+            {
+                BGM.Stop();
+                oneminBGM.PlayOneShot(sound2);
+                bgmCalledOnce = true;
+            }
         }
     }
 }
