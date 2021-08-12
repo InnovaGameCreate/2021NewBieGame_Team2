@@ -11,12 +11,9 @@ public class Main : MonoBehaviour
     public float time;
     public Text number;
     public Text nageru;
-    bool timeLimit = true; //プレイ時間の制限
 
-    public AudioClip sound1; //タイムアップ音源
-    AudioSource audiosource;
-
-    public static Main Instance
+    bool Result1CalledOnce = false;
+    public static Main Instance   //DontDestroy複製防止に使用
     {
         get; private set;
     }
@@ -35,7 +32,6 @@ public class Main : MonoBehaviour
     }
     void Start()
     {
-        audiosource = GetComponent<AudioSource>(); //Componentの取得
         time = 180.0f;
     }
 
@@ -43,21 +39,16 @@ public class Main : MonoBehaviour
     void Update()
     {
         time = time - Time.deltaTime;
-        if (SceneManager.GetActiveScene().name != "Hurimuita" || SceneManager.GetActiveScene().name != "Result2")//もしいるシーンが"Hurimuita"でも"Result2"でもないなら
+        if (SceneManager.GetActiveScene().name != "Hurimuita" || SceneManager.GetActiveScene().name != "Result2")//もしいるシーンが"Hurimuita"でも"Result2"でも"Result1"ないなら
         {
             if (time <= 0 )
             {
-                audiosource.PlayOneShot(sound1);  //時間切れのSE
-                Invoke("DelayMethod", 2);  //2秒後にDelayMethodへ
+                if (Result1CalledOnce == false)
+                {
+                    SceneManager.LoadScene("Result1");
+                    Result1CalledOnce = true;
+                }
             }
-        }
-    }
-    void DelayMethod()
-    {
-        if (timeLimit == true)
-        {
-            SceneManager.LoadScene("Result1");
-            timeLimit = false;
         }
     }
 }
