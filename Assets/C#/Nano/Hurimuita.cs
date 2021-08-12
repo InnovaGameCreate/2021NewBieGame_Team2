@@ -14,7 +14,7 @@ public class Hurimuita : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Invoke("DelayMethod", 2);  //2•bŒã‚ÉDelayMethod‚Ö
+        Invoke("DelayMethod", 1);  //1•bŒã‚ÉDelayMethod‚Ö
     }
 
     void DelayMethod()
