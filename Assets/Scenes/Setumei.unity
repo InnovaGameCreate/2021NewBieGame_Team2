@@ -272,8 +272,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 567847831}
-  - component: {fileID: 567847830}
   - component: {fileID: 567847832}
+  - component: {fileID: 567847830}
   m_Layer: 0
   m_Name: AllSceneChangeSE
   m_TagString: Untagged
@@ -290,12 +290,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 567847829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16f6623f56fc2b841bf210ae8d6c23de, type: 3}
+  m_Script: {fileID: 11500000, guid: 4921ca9a51081ff4780f61fd681ff700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound1: {fileID: 8300000, guid: a7935f1ddcc97454ba4fb22381f8b55b, type: 3}
+  sound1: {fileID: 8300000, guid: 476f34dc276b046408bc85ace10744e8, type: 3}
   sound2: {fileID: 8300000, guid: 63a0c6899802e334b946993c8eda1251, type: 3}
-  audioSource: {fileID: 0}
 --- !u!4 &567847831
 Transform:
   m_ObjectHideFlags: 0
