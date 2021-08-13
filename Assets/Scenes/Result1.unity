@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 1178825869}
   - component: {fileID: 1178825868}
   - component: {fileID: 1178825867}
+  - component: {fileID: 1178825866}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -999,7 +1000,7 @@ RectTransform:
   m_GameObject: {fileID: 1178825864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 645846376}
   m_Father: {fileID: 697776365}
@@ -1010,6 +1011,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -90}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1178825866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178825864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74254435937b9f8489921a2b70b69f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1178825867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,9 +1067,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ReturnStart, Assembly-CSharp
-        m_MethodName: OnClickStartButton
+      - m_Target: {fileID: 1178825866}
+        m_TargetAssemblyTypeName: ReturnStart1, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
