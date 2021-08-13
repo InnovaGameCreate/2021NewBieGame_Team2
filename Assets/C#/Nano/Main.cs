@@ -40,14 +40,19 @@ public class Main : MonoBehaviour
     void Update()
     {
         time = time - Time.deltaTime;
-        if (SceneManager.GetActiveScene().name != "Hurimuita" || SceneManager.GetActiveScene().name != "Result2")//もしいるシーンが"Hurimuita"でも"Result2"でも"Result1"ないなら
+        if (SceneManager.GetActiveScene().name != "Hurimuita" )//もしいるシーンが"Hurimuita"でも"Result2"でも"Result1"ないなら
         {
-            if (time <= 0 )
-            {
-                if (Result1CalledOnce == false)
+            if(SceneManager.GetActiveScene().name != "Result2")
+
+            { if (time <= 0 )
+            
                 {
-                    SceneManager.LoadScene("Result1");
-                    Result1CalledOnce = true;
+
+                    if (Result1CalledOnce == false)
+                    {
+                        SceneManager.LoadScene("Result1");
+                        Result1CalledOnce = true;
+                    }
                 }
             }
         }
