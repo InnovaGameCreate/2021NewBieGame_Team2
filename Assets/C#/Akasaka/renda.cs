@@ -14,7 +14,7 @@ public class renda : MonoBehaviour
     private Main mainCs;
     public Image Image1;
     public Sprite Sprite1;
-    public AudioClip sound1;
+    public AudioClip sound2;
     AudioSource audioSource;
     bool scoreonce = true;
     // Start is called before the first frame update
@@ -34,22 +34,18 @@ public class renda : MonoBehaviour
         }
         if (count >= 20)
         {
-            Image1.sprite = Sprite1;
-            Invoke("DelayMethod", 1f);
-
-            if (haoto == true)
+            if (scoreonce == true)
             {
-                audioSource.PlayOneShot(sound1);
-                haoto = false;
+            Image1.sprite = Sprite1;
+            audioSource.PlayOneShot(sound2);
+            mainCs.score = mainCs.score + point;
+            scoreonce = false;
+            Invoke("DelayMethod", 1f);
             }
         }
     }
     void DelayMethod()
-    {   if (scoreonce == true)
-        {
-        mainCs.score = mainCs.score + point; 
-        SceneManager.LoadScene("Main");
-        scoreonce = false;
-        }
+    {   
+        SceneManager.LoadScene("Main");    
     }
 }
