@@ -32,6 +32,8 @@ TagManager:
   - X
   - Y
   - Z
+  - wig
+  - Main
   layers:
   - Default
   - TransparentFX

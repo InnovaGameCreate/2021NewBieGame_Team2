@@ -13,6 +13,7 @@ public class Main : MonoBehaviour
     public Text number;
     public Text nageru;
 
+    bool timeStop = false;
     bool Result1CalledOnce = false;
     public static Main Instance   //DontDestroyï°êªñhé~Ç…égóp
     {
@@ -39,7 +40,20 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time = time - Time.deltaTime;
+        if (timeStop == false)
+        {
+            time = time - Time.deltaTime;
+        }
+
+        if(time < 0)
+        {
+            timeStop = true;
+        }
+        else
+        {
+            timeStop = false;
+        }
+
         if (SceneManager.GetActiveScene().name != "Hurimuita" )//Ç‡ÇµÇ¢ÇÈÉVÅ[ÉìÇ™"Hurimuita"Ç≈Ç‡"Result2"Ç≈Ç‡"Result1"Ç»Ç¢Ç»ÇÁ
         {
             if(SceneManager.GetActiveScene().name != "Result2")
