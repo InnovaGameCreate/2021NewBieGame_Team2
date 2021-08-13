@@ -12,7 +12,7 @@ public class Target : MonoBehaviour
     private GameObject main;
     private Main mainCs;
 
-    public AudioClip sound1; //ƒ^ƒCƒ€ƒAƒbƒv‰¹Œ¹
+    public AudioClip sound1; //ï¿½^ï¿½Cï¿½ï¿½ï¿½Aï¿½bï¿½vï¿½ï¿½ï¿½ï¿½
     AudioSource audiosource;
 
     // Start is called before the first frame update
@@ -21,24 +21,24 @@ public class Target : MonoBehaviour
         main = GameObject.Find("Main");
         mainCs = main.GetComponent<Main>();
 
-        audiosource = GetComponent<AudioSource>(); //Component‚Ìæ“¾
+        audiosource = GetComponent<AudioSource>(); //Componentï¿½Ìæ“¾
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow)) //‰EƒL[‚ª‰Ÿ‚³‚ê‚½‚È‚ç
+        if (Input.GetKey(KeyCode.RightArrow)) //ï¿½Eï¿½Lï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½È‚ï¿½
         {
             if (this.transform.position.x <= xRange)
                 transform.Translate(new Vector2(10, 0) * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))     //¶ƒL[‚ª‰Ÿ‚³‚ê‚½‚È‚ç
+        if (Input.GetKey(KeyCode.LeftArrow))     //ï¿½ï¿½ï¿½Lï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½È‚ï¿½
         {
             if (this.transform.position.x >= xRange * -1)
                 transform.Translate(new Vector2(-10, 0) * Time.deltaTime);
         }
 
-        if (mainCs.eraser <= 0)      //eraser‚ª0‚É‚È‚Á‚½‚ç"Main"‚É–ß‚é
+        if (mainCs.eraser <= 0)      //eraserï¿½ï¿½0ï¿½É‚È‚ï¿½ï¿½ï¿½ï¿½ï¿½"Main"ï¿½É–ß‚ï¿½
             Invoke("ToMainMethod", 1);
 
         if (reloadTime > reload)
@@ -48,10 +48,10 @@ public class Target : MonoBehaviour
         {
             if (mainCs.eraser >= 1)
             {
-                mainCs.eraser = mainCs.eraser - 1; //Á‚µƒSƒ€Á”ï
+                mainCs.eraser = mainCs.eraser - 1; //ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 reload = 0;
 
-                audiosource.PlayOneShot(sound1);  //Á‚µƒSƒ€“Š‚°SE
+                audiosource.PlayOneShot(sound1);  //ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½SE
                 
             }
 
@@ -70,7 +70,7 @@ public class Target : MonoBehaviour
                 {
                     if (mainCs.eraser >= 1)
                     {
-                        mainCs.score = mainCs.score + 1000; Debug.Log("“–‚½‚Á‚½");  //ƒXƒRƒA‰ÁZ
+                        mainCs.score = mainCs.score + 1000; Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");  //ï¿½Xï¿½Rï¿½Aï¿½ï¿½ï¿½Z
                         reload = 0;
                         SceneManager.LoadScene("Hit");
                     }
