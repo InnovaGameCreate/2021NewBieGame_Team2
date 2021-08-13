@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    bool nagaoshi = false;
     public GameObject main;
     private Main mainCs;
 
@@ -33,7 +34,31 @@ public class SceneChanger : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
             SceneManager.LoadScene("Hayabenn");
 
-        if (Input.GetKey(KeyCode.Space))
-            SceneManager.LoadScene("Inemuri");
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            nagaoshi = true;
+            mainCs.pushtime = 0;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            nagaoshi = false;
+            mainCs.pushtime = 0;
+        }
+
+        if (nagaoshi == true)
+        {
+            mainCs.pushtime = mainCs.pushtime + Time.deltaTime;
+
+            if (mainCs.pushtime >= 1)
+            {
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    nagaoshi = false;
+                    mainCs.pushtime = 0;
+                    SceneManager.LoadScene("Inemuri");
+                }
+            }
+        }
     }
 }

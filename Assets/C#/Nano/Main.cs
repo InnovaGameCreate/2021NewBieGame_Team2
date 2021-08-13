@@ -9,6 +9,7 @@ public class Main : MonoBehaviour
     public float eraser;
     public float score;
     public float time;
+    public float pushtime;
     public Text number;
     public Text nageru;
 
