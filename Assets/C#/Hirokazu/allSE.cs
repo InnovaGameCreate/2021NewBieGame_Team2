@@ -9,7 +9,7 @@ public class allSE : MonoBehaviour
     public AudioClip sound2;
     AudioSource audioSource;
 
-    public static allSE Instance   //DontDestroy•¡»–h~‚Ég—p
+    public static allSE Instance   //DontDestroyï¿½ï¿½ï¿½ï¿½ï¿½hï¿½~ï¿½Égï¿½p
     {
         get; private set;
     }
@@ -74,6 +74,21 @@ public class allSE : MonoBehaviour
                 SceneManager.LoadScene("Main");
             }
         }
+        if (SceneManager.GetActiveScene().name == "Main")
+        {
+            if (Input.GetKey(KeyCode.I))
+            {
+                SceneManager.LoadScene("Help");
+            }
+        }
+        if (SceneManager.GetActiveScene().name == "Help")
+        {
+            if (Input.GetKey(KeyCode.I))
+            {
+                SceneManager.LoadScene("Main");
+            }
+        }
+
 
     }
 }
