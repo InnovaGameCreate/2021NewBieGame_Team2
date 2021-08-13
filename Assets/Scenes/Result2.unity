@@ -330,7 +330,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 563831447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74254435937b9f8489921a2b70b69f16, type: 3}
+  m_Script: {fileID: 11500000, guid: f923c056999dc0e4aa49e1338232ed4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &563831450
@@ -378,7 +378,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 563831449}
-        m_TargetAssemblyTypeName: ReturnStart1, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReturnStart, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
