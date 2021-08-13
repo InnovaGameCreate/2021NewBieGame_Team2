@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class renda : MonoBehaviour
 {
-    bool haoto = true;
     float count = 0;
     public int point;
     public float score;

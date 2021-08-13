@@ -19,6 +19,6 @@ public class Erasercount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        erasercount.text = mainCs.eraser.ToString() + "ŒÂ";
+        erasercount.text = mainCs.eraser.ToString() + " ŒÂ";
     }
 }
