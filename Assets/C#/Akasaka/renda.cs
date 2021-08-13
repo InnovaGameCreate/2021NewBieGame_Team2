@@ -16,6 +16,7 @@ public class renda : MonoBehaviour
     public Sprite Sprite1;
     public AudioClip sound1;
     AudioSource audioSource;
+    bool scoreonce = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,8 +45,11 @@ public class renda : MonoBehaviour
         }
     }
     void DelayMethod()
-    {
+    {   if (scoreonce == true)
+        {
         mainCs.score = mainCs.score + point; 
         SceneManager.LoadScene("Main");
+        scoreonce = false;
+        }
     }
 }
