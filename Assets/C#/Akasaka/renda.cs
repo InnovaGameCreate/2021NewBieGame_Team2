@@ -31,7 +31,7 @@ public class renda : MonoBehaviour
         {
             count += 1;
         }
-        if (count >= 20)
+        if (count >= 30)
         {
             if (scoreonce == true)
             {
