@@ -8,6 +8,7 @@ public class HayabennToResult : MonoBehaviour
     public float HayabennTime; //Hayabenn‚É—ˆ‚Ä‚©‚ç‚ÌŠÔ
     public float alertTime;  //U‚èŒü‚­‘O‚É‚È‚éŠÔ
     bool alertCalledOnce = false; //U‚èŒü‚«‰¹‚ğˆê‰ñ‚¾‚¯–Â‚ç‚·
+    public float skipT;
 
     public AudioClip sound1; //ƒ^ƒCƒ€ƒAƒbƒv‰¹Œ¹
     AudioSource audiosource;
@@ -29,7 +30,7 @@ public class HayabennToResult : MonoBehaviour
         {
             audiosource.PlayOneShot(sound1); //Œx‰¹‚ğ–Â‚ç‚·
             alertCalledOnce = true; 
-            Invoke("ToHurimuitaMethod", 2); //Œx‚Ì2•bŒãHurimuita‚Ö
+            Invoke("ToHurimuitaMethod", skipT); //Œx‚Ì2•bŒãHurimuita‚Ö
         }
     }
 

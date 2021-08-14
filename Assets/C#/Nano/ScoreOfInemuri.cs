@@ -6,6 +6,7 @@ public class ScoreOfInemuri : MonoBehaviour
 {
     public GameObject main;
     private Main mainCs;
+    public float point;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class ScoreOfInemuri : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            mainCs.score = mainCs.score + 0.1f;
+            mainCs.score = mainCs.score + point;
         }
     }
 }

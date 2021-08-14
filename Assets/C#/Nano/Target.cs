@@ -11,6 +11,7 @@ public class Target : MonoBehaviour
     private float reload;
     private GameObject main;
     private Main mainCs;
+    public float point;
 
     public AudioClip sound1; //�^�C���A�b�v����
     AudioSource audiosource;
@@ -70,7 +71,7 @@ public class Target : MonoBehaviour
                 {
                     if (mainCs.eraser >= 1)
                     {
-                        mainCs.score = mainCs.score + 1000; Debug.Log("��������");  //�X�R�A���Z
+                        mainCs.score = mainCs.score + point; Debug.Log("��������");  //�X�R�A���Z
                         reload = 0;
                         SceneManager.LoadScene("Hit");
                     }
