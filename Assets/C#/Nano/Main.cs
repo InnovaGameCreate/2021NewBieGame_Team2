@@ -60,16 +60,30 @@ public class Main : MonoBehaviour
         {
             if(SceneManager.GetActiveScene().name != "Hurimuita" )
             {
-                if (time <= 0)
+                if (SceneManager.GetActiveScene().name != "Setumei")
                 {
-                    if (Result1CalledOnce == false)
+                    if (SceneManager.GetActiveScene().name != "Starting")
                     {
-                        SceneManager.LoadScene("Result1");
-                        Result1CalledOnce = true;
+                        if (time <= 0)
+                        {
+                            if (Result1CalledOnce == false)
+                            {
+                                SceneManager.LoadScene("Result1");
+                                Result1CalledOnce = true;
+                            }
+                        }
                     }
+                        
                 }
+                    
             }
                
+        }
+
+        if(SceneManager.GetActiveScene().name == "Setumei")
+        { 
+            timeStop = false;
+            Result1CalledOnce = false;
         }
     }
 }
