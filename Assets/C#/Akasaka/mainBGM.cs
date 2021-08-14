@@ -82,6 +82,9 @@ public class mainBGM : MonoBehaviour
                 bgmCalledOnce = false;
                 bgm2CalledOnce = false;
                 bgmSet = true;
+                mainCs.time = 180.0f;
+                mainCs.eraser = 0;
+                mainCs.score = 0;
             }
         }
        
