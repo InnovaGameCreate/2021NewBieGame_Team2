@@ -325,7 +325,7 @@ PrefabInstance:
     - target: {fileID: 360966545942453045, guid: b12af3a4c0c922a4489896621b415abc, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 41ededdf32d55984181d3c8417d378f5, type: 3}
+      objectReference: {fileID: 8300000, guid: aa7cf6c3fd9e45246bbd9ca240bc03b5, type: 3}
     - target: {fileID: 360966545942453045, guid: b12af3a4c0c922a4489896621b415abc, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -334,6 +334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main
       objectReference: {fileID: 0}
+    - target: {fileID: 360966545942453051, guid: b12af3a4c0c922a4489896621b415abc, type: 3}
+      propertyPath: sound1
+      value: 
+      objectReference: {fileID: 8300000, guid: aa7cf6c3fd9e45246bbd9ca240bc03b5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12af3a4c0c922a4489896621b415abc, type: 3}
 --- !u!1 &385492340
