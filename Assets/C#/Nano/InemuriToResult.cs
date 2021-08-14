@@ -17,7 +17,7 @@ public class InemuriToResult : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>(); //Component�̎擾
-        alertTime = Random.Range(7.0f, 20.0f);
+        alertTime = Random.Range(5.0f, 15.0f);
         Debug.Log(alertTime);
     }
 

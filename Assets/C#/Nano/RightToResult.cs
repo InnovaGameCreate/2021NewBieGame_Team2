@@ -17,7 +17,7 @@ public class RightToResult : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>(); //Component�̎擾
-        alertTime = Random.Range(4.0f, 15.0f);
+        alertTime = Random.Range(3.0f, 10.0f);
         Debug.Log(alertTime);
     }
 
