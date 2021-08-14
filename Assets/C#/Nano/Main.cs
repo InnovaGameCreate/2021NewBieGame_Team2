@@ -30,8 +30,10 @@ public class Main : MonoBehaviour
         }
         Instance = this;
 
+        if(SceneManager.GetActiveScene().name != "Starting")
         DontDestroyOnLoad(this.gameObject);
     }
+
     void Start()
     {
         time = 180.0f;
@@ -54,14 +56,12 @@ public class Main : MonoBehaviour
             timeStop = false;
         }
 
-        if (SceneManager.GetActiveScene().name != "Hurimuita" )//もしいるシーンが"Hurimuita"でも"Result2"でも"Result1"ないなら
+        if (SceneManager.GetActiveScene().name != "Result2")//もしいるシーンが"Hurimuita"でも"Result2"ないなら
         {
-            if(SceneManager.GetActiveScene().name != "Result2")
-
-            { if (time <= 0 )
-            
+            if(SceneManager.GetActiveScene().name != "Hurimuita" )
+            {
+                if (time <= 0)
                 {
-
                     if (Result1CalledOnce == false)
                     {
                         SceneManager.LoadScene("Result1");
@@ -69,6 +69,7 @@ public class Main : MonoBehaviour
                     }
                 }
             }
+               
         }
     }
 }
