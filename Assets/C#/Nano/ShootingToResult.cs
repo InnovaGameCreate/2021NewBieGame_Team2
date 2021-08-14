@@ -16,13 +16,15 @@ public class ShootingToResult : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>(); //Component‚Ìæ“¾
+        alertTime = Random.Range(3.0f, 15.0f);
+        Debug.Log(alertTime);
     }
 
     // Update is called once per frame
     void Update()
     {
         ShootingTime = ShootingTime + Time.deltaTime;
-        alertTime = Random.Range(5.0f, 15.0f);
+        
         if (ShootingTime > alertTime && alertCalledOnce == false)
         {
             audiosource.PlayOneShot(sound1); //Œx‰¹‚ğ–Â‚ç‚·

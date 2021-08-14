@@ -16,13 +16,14 @@ public class HayabennToResult : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>(); //Component�̎擾
+        alertTime = Random.Range(2.0f, 8.0f);
+        Debug.Log(alertTime);
     }
 
     // Update is called once per frame
     void Update()
     {
         HayabennTime = HayabennTime + Time.deltaTime;
-        alertTime = Random.Range(5.0f, 15.0f);
 
         if (HayabennTime > alertTime && alertCalledOnce == false)
         {

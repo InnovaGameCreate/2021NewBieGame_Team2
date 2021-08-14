@@ -23,9 +23,11 @@ public class Hit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))//Space‚ð‰Ÿ‚·‚Æ
-        {
-            SceneManager.LoadScene("Main");
-        }
+        Invoke("ToMainMethod", 2);
+    }
+
+    void ToMainMethod()
+    {
+        SceneManager.LoadScene("Main");
     }
 }

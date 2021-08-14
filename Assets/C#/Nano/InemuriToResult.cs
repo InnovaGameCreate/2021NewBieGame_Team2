@@ -16,13 +16,15 @@ public class InemuriToResult : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>(); //Component‚Ìæ“¾
+        alertTime = Random.Range(7.0f, 20.0f);
+        Debug.Log(alertTime);
     }
 
     // Update is called once per frame
     void Update()
     {
         InemuriTime = InemuriTime + Time.deltaTime;
-        alertTime = Random.Range(5.0f, 15.0f);
+        
         if (InemuriTime > alertTime && alertCalledOnce == false)
         {
             audiosource.PlayOneShot(sound1); //Œx‰¹‚ğ–Â‚ç‚·

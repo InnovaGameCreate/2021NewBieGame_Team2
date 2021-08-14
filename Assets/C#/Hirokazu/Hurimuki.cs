@@ -11,13 +11,13 @@ public class Hurimuki : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rotateTime = Random.Range(2.0f, 12.0f); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        rotateTime = Random.Range(4.0f, 20.0f);    //4`20•b‚Ì’l‚ð‘ã“ü
+        
         if (rotateTime > rotate)
             rotate = rotate + Time.deltaTime;
         if (rotateTime <= rotate)

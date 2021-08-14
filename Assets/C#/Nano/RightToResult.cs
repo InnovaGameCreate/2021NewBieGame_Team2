@@ -16,13 +16,15 @@ public class RightToResult : MonoBehaviour
     void Start()
     {
         audiosource = GetComponent<AudioSource>(); //Component‚Ìæ“¾
+        alertTime = Random.Range(4.0f, 15.0f);
+        Debug.Log(alertTime);
     }
 
     // Update is called once per frame
     void Update()
     {
         RightTime = RightTime + Time.deltaTime;
-        alertTime = Random.Range(8.0f, 15.0f);
+       
         if (RightTime > alertTime && alertCalledOnce == false)
         {
             audiosource.PlayOneShot(sound1); //Œx‰¹‚ğ–Â‚ç‚·
