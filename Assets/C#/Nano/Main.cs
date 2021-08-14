@@ -82,7 +82,7 @@ public class Main : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name == "Setumei")
         { 
-            timeStop = false;
+            timeStop = true;
             Result1CalledOnce = false;
         }
     }
