@@ -623,6 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 0}
+  point: 0.2
 --- !u!4 &1399362578
 Transform:
   m_ObjectHideFlags: 0
@@ -1004,6 +1005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InemuriTime: 0
   alertTime: 0
+  skipT: 0
   sound1: {fileID: 8300000, guid: 2887ee392a9075b46aedd9970f309be7, type: 3}
 --- !u!82 &1847360592
 AudioSource:

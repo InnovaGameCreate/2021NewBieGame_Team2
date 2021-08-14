@@ -15,7 +15,7 @@ public class audiodesu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (are <= 20)
+        if (are <= 30)
         {
         if (Input.GetKeyDown (KeyCode.F))
         {

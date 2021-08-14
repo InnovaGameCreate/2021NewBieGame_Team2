@@ -1040,6 +1040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RightTime: 0
   alertTime: 0
+  skipT: 1
   sound1: {fileID: 8300000, guid: 2887ee392a9075b46aedd9970f309be7, type: 3}
 --- !u!4 &1168337357
 Transform:

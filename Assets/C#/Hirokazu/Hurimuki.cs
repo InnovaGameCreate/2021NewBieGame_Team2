@@ -6,7 +6,7 @@ public class Hurimuki : MonoBehaviour
 {
     private float rotateTime; //10`20•b‚Ì’l‚ğ‘ã“ü‚³‚ê‚é
     public float rotate;  //ŠÔ‚²‚Æ‚É‰ÁZ
-    [SerializeField] private Renderer Wig;
+    [SerializeField] private Renderer Wig1;
     [SerializeField] private Renderer Wig2;
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,8 @@ public class Hurimuki : MonoBehaviour
             rotate = rotate + Time.deltaTime;
         if (rotateTime <= rotate)
         {
-            Wig.enabled = false;
-            Wig2.transform.position = Wig.transform.position;
+            Wig1.enabled = false;
+            Wig2.transform.position = Wig1.transform.position;
             Wig2.enabled = true;
             Invoke("HurimukiMethod", 2);
         }
@@ -31,8 +31,8 @@ public class Hurimuki : MonoBehaviour
 
     void HurimukiMethod()
     {
-        Wig.enabled = true;
-        Wig.transform.position = Wig2.transform.position;
+        Wig1.enabled = true;
+        Wig1.transform.position = Wig2.transform.position;
         Wig2.enabled = false;
         rotate = 0;
     }
