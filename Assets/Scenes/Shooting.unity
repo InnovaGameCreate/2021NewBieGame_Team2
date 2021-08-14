@@ -135,6 +135,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4853988473681827141, guid: 73548dbf727b853488be61ad952ca4a2, type: 3}
+      propertyPath: point
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853988473681827141, guid: 73548dbf727b853488be61ad952ca4a2, type: 3}
       propertyPath: sound2
       value: 
       objectReference: {fileID: 8300000, guid: 8d30696f958785048a80045fc520690e, type: 3}
