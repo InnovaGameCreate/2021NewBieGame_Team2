@@ -18,6 +18,6 @@ public class ScoreBoard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = "SCORE " + mainCs.score.ToString("f1");
+        score.text = "SCORE : " + mainCs.score.ToString("f1");
     }
 }
