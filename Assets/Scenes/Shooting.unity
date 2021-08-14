@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 947133087, guid: 73548dbf727b853488be61ad952ca4a2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4853988473681827141, guid: 73548dbf727b853488be61ad952ca4a2, type: 3}
       propertyPath: sound2
       value: 
@@ -148,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4853988473681827146, guid: 73548dbf727b853488be61ad952ca4a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4853988473681827146, guid: 73548dbf727b853488be61ad952ca4a2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1131,6 +1135,10 @@ PrefabInstance:
     - target: {fileID: 4101981928828304504, guid: e975334524879a744b8802695c4573b1, type: 3}
       propertyPath: m_Name
       value: Wig
+      objectReference: {fileID: 0}
+    - target: {fileID: 5378168696306039755, guid: e975334524879a744b8802695c4573b1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e975334524879a744b8802695c4573b1, type: 3}
